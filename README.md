@@ -90,7 +90,3 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 ## 🤝 Kontribusi
 
 Kontribusi sangat diterima! Silakan fork repositori ini dan ajukan *pull request* untuk setiap perbaikan atau penambahan fitur.
-
-## 📄 Lisensi
-
-[TENTUKAN LISENSI ANDA DI_SINI - misal: MIT, Apache 2.0]
