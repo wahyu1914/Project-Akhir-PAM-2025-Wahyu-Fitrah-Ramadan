@@ -79,7 +79,4 @@ dependencies {
     implementation (libs.androidx.animation)
     implementation (libs.ui)
     implementation (libs.androidx.compose.material3.material3)
-    implementation(platform("com.google.firebase:firebase-bom:34.7.0"))
-    implementation("com.google.firebase:firebase-auth-ktx")
-    implementation("com.google.firebase:firebase-database-ktx")
 }

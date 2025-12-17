@@ -86,7 +86,3 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 4.  **Sync dan Jalankan**
     * Tunggu Android Studio menyelesaikan sinkronisasi Gradle.
     * Pilih emulator atau perangkat fisik, lalu klik "Run".
-
-## 🤝 Kontribusi
-
-Kontribusi sangat diterima! Silakan fork repositori ini dan ajukan *pull request* untuk setiap perbaikan atau penambahan fitur.
