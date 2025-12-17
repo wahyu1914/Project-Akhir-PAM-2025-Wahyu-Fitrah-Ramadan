@@ -23,8 +23,7 @@ import java.util.Calendar
 import java.util.Date
 
 class DatabaseHelper {
-    internal val database =
-        FirebaseDatabase.getInstance("https://ecommerceproject-82a0e-default-rtdb.asia-southeast1.firebasedatabase.app/").reference
+    internal val database = FirebaseDatabase.getInstance("https://projectpam-de18d-default-rtdb.asia-southeast1.firebasedatabase.app/").reference
     internal val auth = FirebaseAuth.getInstance()
 
     object UserRole {
@@ -242,6 +241,7 @@ class DatabaseHelper {
         val userId = auth.currentUser?.uid ?: throw IllegalStateException("Pengguna tidak terautentikasi")
         return getUserProfileById(userId, forceRefresh)
     }
+    // KODE BARU (Direvisi)
     suspend fun getUserProfileById(userId: String, forceRefresh: Boolean = false): Map<String, Any>? {
         try {
             if (forceRefresh && userId == auth.currentUser?.uid) {
@@ -253,6 +253,9 @@ class DatabaseHelper {
                 return null
             }
             return (snapshot.value as? Map<String, Any>)?.plus("userId" to userId)
+        } catch (e: CancellationException) {
+            // Memastikan pembatalan coroutine diteruskan (SAFE CANCELLATION)
+            throw e
         } catch (e: Exception) {
             Log.e("DatabaseHelper", "Gagal mengambil profil untuk userId=$userId", e)
             throw Exception("Gagal mengambil profil pengguna: ${e.message}")
