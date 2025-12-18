@@ -63,17 +63,17 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
     * **PENTING:** Buka tab **Realtime Database** dan ubah Aturan Keamanan (Security Rules) agar dapat dibaca/ditulis (untuk pengembangan):
       ```json
       {
-"rules": {
-".read": "auth != null",
-".write": "auth != null",
-"orders": {
-".indexOn": ["userId"]
-},
-"products": {
-".indexOn": ["createdBy", "category"]
-}
-}
-}
+        "rules": {
+          ".read": "auth != null",
+          ".write": "auth != null",
+          "orders": {
+      ".indexOn": ["userId"]
+          }
+        },"products": {
+          ".indexOn": ["createdBy", "category"]
+        }
+        
+      }
       ```
       *(Catatan: Untuk produksi, Anda harus menggunakan aturan keamanan yang lebih ketat).*
 
