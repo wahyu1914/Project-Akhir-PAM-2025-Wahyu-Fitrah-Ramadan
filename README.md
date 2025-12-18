@@ -2,10 +2,6 @@
 
 Sebuah aplikasi e-commerce seluler native Android yang dibangun menggunakan **Kotlin** dan **Jetpack Compose**. Aplikasi ini dirancang dengan arsitektur multi-peran yang kompleks untuk melayani berbagai jenis pengguna.
 
-Seluruh backend aplikasi ini didukung penuh oleh **Firebase**, memanfaatkan:
-* **Firebase Realtime Database** untuk persistensi semua data (produk, pengguna, pesanan, dll.).
-* **Firebase Authentication** untuk manajemen login dan registrasi pengguna.
-
 ## ☁️ Manajemen Gambar dengan Cloudinary
 
 Aplikasi ini **tidak** menggunakan Firebase Storage untuk gambar. Sebaliknya, aplikasi ini mengadopsi alur kerja yang efisien:
