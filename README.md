@@ -32,14 +32,6 @@ Aplikasi ini menyediakan fungsionalitas yang berbeda berdasarkan peran pengguna:
 * **Manajemen Produk:** Menambah dan mengedit produk di Firebase, termasuk menyediakan **URL Cloudinary untuk gambar produk**.
 * **Manajemen Pesanan:** Melihat dan mengelola pesanan yang masuk dari Firebase.
 
-### ⚙️ Peran Admin
-* **Manajemen Pengguna:** Mengelola semua pengguna (peran, profil) di Firebase.
-* **Tambah Supervisor:** Menambahkan pengguna baru dengan peran supervisor ke Firebase.
-
-### 📊 Peran Leader & Supervisor
-* **Dashboard Analitik:** Melihat ringkasan data dan grafik dari data Firebase.
-* **Panel Supervisor:** Panel kontrol khusus untuk supervisor.
-
 ## 🛠️ Teknologi yang Digunakan
 
 * **Bahasa:** Kotlin
@@ -57,7 +49,7 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/faizaqeel07/ecommerceproject]
+    git clone [https://github.com/wahyu1914/Project-Akhir-PAM-2025-Wahyu-Fitrah-Ramadan.git]
     ```
 2.  **Buka di Android Studio**
     * Buka Android Studio dan pilih "Open an existing project".
