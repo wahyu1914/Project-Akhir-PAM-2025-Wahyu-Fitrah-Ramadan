@@ -62,9 +62,9 @@ class DatabaseHelper {
         fun initCloudinary(context: Context) {
             if (!isCloudinaryInitialized) {
                 val config = mapOf(
-                    "cloud_name" to "djwfibc4t",
-                    "api_key" to "461576188761489",
-                    "api_secret" to "P5pvHP3RSurX_jTut1Or6wIYAUU"
+                    "cloud_name" to "degz75abl",
+                    "api_key" to "892278659124576",
+                    "api_secret" to "f5WUY4ZtiPLCUkX1fvUjnViAAr4"
                 )
                 try {
                     MediaManager.init(context, config)
